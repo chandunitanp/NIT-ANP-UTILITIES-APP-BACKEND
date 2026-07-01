@@ -1,0 +1,25 @@
+# Maven
+target/
+
+# Logs
+*.log
+
+# IDE
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Uploads
+uploads/
+
+# Environment
+.env
+
+# JVM crash logs
+hs_err_pid*
+replay_pid*
