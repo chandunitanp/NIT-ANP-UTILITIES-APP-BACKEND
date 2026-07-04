@@ -210,6 +210,7 @@ public class AuthController {
         System.out.println(user.getRole());
 
         // ================= RESPONSE =================
+        System.out.println("BRANCH = " + user.getBranchCode());
 
         return ResponseEntity.ok(
 
@@ -220,6 +221,7 @@ public class AuthController {
                         user.getEmail(),
                         user.getRole(),
                         user.getDepartmentName(),
+                        user.getBranchCode(),
                         user.getTeamType()
                 )
         );
