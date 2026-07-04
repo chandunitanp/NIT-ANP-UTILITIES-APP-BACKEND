@@ -21,6 +21,8 @@ public class LoginResponseDTO {
 
     private String departmentName;
 
+    private String branchCode;   // NEW
+
     private TeamType teamType;
 
     // ================= CONSTRUCTOR =================
@@ -32,6 +34,7 @@ public class LoginResponseDTO {
             String email,
             Role role,
             String departmentName,
+            String branchCode,
             TeamType teamType
     ) {
         this.token = token;
@@ -40,6 +43,7 @@ public class LoginResponseDTO {
         this.email = email;
         this.role = role;
         this.departmentName = departmentName;
+        this.branchCode = branchCode;
         this.teamType = teamType;
     }
 
@@ -67,6 +71,10 @@ public class LoginResponseDTO {
 
     public String getDepartmentName() {
         return departmentName;
+    }
+
+    public String getBranchCode() {
+        return branchCode;
     }
 
     public TeamType getTeamType() {
@@ -97,6 +105,10 @@ public class LoginResponseDTO {
 
     public void setDepartmentName(String departmentName) {
         this.departmentName = departmentName;
+    }
+
+    public void setBranchCode(String branchCode) {
+        this.branchCode = branchCode;
     }
 
     public void setTeamType(TeamType teamType) {
