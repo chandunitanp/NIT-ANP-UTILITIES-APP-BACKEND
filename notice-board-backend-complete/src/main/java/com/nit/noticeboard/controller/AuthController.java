@@ -51,7 +51,9 @@ public class AuthController {
             @RequestBody RegisterDTO dto
     ) {
 
-    	String email = dto.getEmail().toLowerCase();
+    	String email = dto.getEmail().toLowerCase(); 
+        System.out.println("===== REGISTER HIT =====");
+
 
     	if (
     	    !email.endsWith("@nitandhra.ac.in") &&
@@ -222,6 +224,7 @@ public class AuthController {
                         user.getRole(),
                         user.getDepartmentName(),
                         user.getBranchCode(),
+                        user.getPersonalEmail(),
                         user.getTeamType()
                 )
         );
