@@ -22,6 +22,8 @@ public class LoginResponseDTO {
     private String departmentName;
 
     private String branchCode;   // NEW
+    
+    private String personalEmail;   // NEW
 
     private TeamType teamType;
 
@@ -35,6 +37,7 @@ public class LoginResponseDTO {
             Role role,
             String departmentName,
             String branchCode,
+            String personalEmail,
             TeamType teamType
     ) {
         this.token = token;
@@ -44,6 +47,7 @@ public class LoginResponseDTO {
         this.role = role;
         this.departmentName = departmentName;
         this.branchCode = branchCode;
+        this.personalEmail = personalEmail ;
         this.teamType = teamType;
     }
 
@@ -77,6 +81,10 @@ public class LoginResponseDTO {
         return branchCode;
     }
 
+    public String getPersonalEmail() {
+        return personalEmail ;
+    }
+    
     public TeamType getTeamType() {
         return teamType;
     }
@@ -110,7 +118,10 @@ public class LoginResponseDTO {
     public void setBranchCode(String branchCode) {
         this.branchCode = branchCode;
     }
-
+    
+    public void setPersonalEmail(String personalEmail) {
+        this.personalEmail = personalEmail;
+    }
     public void setTeamType(TeamType teamType) {
         this.teamType = teamType;
     }
